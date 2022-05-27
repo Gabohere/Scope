@@ -5,21 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 560px)">
     <title>Scope - Agencia de marketing en Arequipa</title>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#" class="logo">Scope</a>
+    <nav class="nav">
+        <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox">
+        <label for="nav__checkbox" class="nav__toggle">
+            <img class="open" src="./recursos/icons/toggler-off.svg" alt="">
+            <img class="close" src="./recursos/icons/toggler-on.svg" alt="">
+        </label>
+        <ul class="nav__menu">
+            <li class="menu__logo">
+                <img src="./recursos/images/Isotipo scope.svg" alt="">
+                <img src="./recursos/images/Logo scope.svg" alt="">
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li id="cafe"><a class="tomemos-un-cafe" href="#">Tomemos un café</a></li>
+        </ul>
     </nav>
     <header class="portada">
         <div class="portada-texto">
-            <h1>Agencia de Marketing en Arequipa</h1>
-            <p>"La buena publicidad vende el producto hoy, y construye la marca para mañana"</p>
-            <p>~ Luis Bassat ~</p>
+            <h1 class="portada-texto__title">Agencia de Marketing en Arequipa</h1>
+            <p class="portada-texto__p1">"La buena publicidad vende el producto hoy, y construye la marca para mañana"</p>
+            <p class="portada-texto__p2">~ Luis Bassat ~</p>
         </div>
-        <div>
-                <img src="" alt="">
+        <div class="portda-img">
+            <img class="portada-img__1" src="./recursos/images/imagen-muestra.png" alt="">
         </div>
     </header>
+    <section class="section-team">
+        <h2>El mejor equipo</h2>
+    </section>
 </body>
 </html>

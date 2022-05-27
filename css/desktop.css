@@ -1,0 +1,28 @@
+.nav__toggle {
+    display: none;
+}
+
+.nav__menu {
+    flex-direction: row;
+    margin: 0px 40px 0px 40px;
+}
+.nav__menu li {
+    display: block;
+}
+.menu__logo {
+    width: 80px;
+    margin-left: 20px;
+}
+
+.portada {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 600px;
+    text-align: center;
+    background-image: url(../recursos/images/fondo-scope-desktop.png);
+}

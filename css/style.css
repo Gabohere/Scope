@@ -30,12 +30,76 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
 }
 
-h1 {
-    font-size: 3rem;
-    font-family: Qanelas;
+body {
+    font-family: 'Qanelas', sans-serif;
+    font-weight: lighter;
+    background-color: var(--just-wite);
+    height: 100vh;
+}
+nav {
+    background-color: var(--blue-scope);
+}
+.nav .nav__toggle {
+    position: absolute;
+    cursor: pointer;
+    width: 2rem;
+    margin: 0 1rem;
+    right: 0;
+    margin-top: 2rem;
+}
+
+.menu__logo {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.nav__toggle .close {
+    display: none;
+}
+
+.nav__toggle .close,
+.nav__toggle .menu {
+    margin-top: 0.3rem;
+}
+
+.nav__checkbox {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+}
+
+.nav__menu li {
+    list-style-type: none;
+    display: none;
+}
+.nav__menu li:first-child {
+    margin-right: auto;
+    display: block;
+}
+.nav__menu a {
+    text-decoration: none;
+    color: var(--just-wite);
+    font-size: 1.8rem;
+}
+
+.menu__logo img {
+    height: 100%;
+}
+.nav__checkbox:checked ~ ul.nav__menu li {
+    display: block;
+}
+.nav__checkbox:checked ~ label.nav__toggle .close {
+    display: block;
+}
+.nav__checkbox:checked ~ label.nav__toggle .open {
+    display: none;
 }
 .portada {
     position: relative;
@@ -44,19 +108,34 @@ h1 {
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: 334px;
+    height: 650px;
     text-align: center;
     background-image: url(../recursos/images/fondo-scope.png);
 }
-.portada-texto {
+
+.portada-texto .portada-texto__title {
+    font-size: 4rem;
+    font-family: Qanelas;
     color: var(--just-wite);
-    margin:20px 15px 20px 15px;
+    margin:40px 15px 40px 15px;
 }
 
-.portada-texto h1 {
-    margin-top: 60px;
-    margin-bottom: 60px;
+.portada-texto .portada-texto__p1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--just-wite);
 }
-.portada-texto p {
-    margin-top: 10px;
+.portada-texto .portada-texto__p2 {
+    font-size: 1.4rem;
+    color: var(--just-wite);
+}
+
+.portada .portada-img__1 {
+    width: 300px;
+}
+
+.section-team h2 {
+    margin: 40px 0px 20px 0px;
+    font-size: 4rem;
+    text-align: center;
 }
