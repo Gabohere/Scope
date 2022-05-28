@@ -25,18 +25,32 @@
 }
 @font-face {
     font-family: Qanelas;
-    src: url(../fonts/Qanelas-Medium.ttf);
+    src: url(https://res.cloudinary.com/souldoutt/raw/upload/v1653697217/scope/fonts/Qanelas-UltraLight_exx37r.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 100;
 }
-
+@font-face {
+    font-family: Qanelas;
+    src: url(https://res.cloudinary.com/souldoutt/raw/upload/v1653697216/scope/fonts/Qanelas-Medium_c5zvvg.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: Qanelas;
+    src: url(https://res.cloudinary.com/souldoutt/raw/upload/v1653697215/scope/fonts/Qanelas-ExtraBold_nqjodz.ttf) format("truetype");
+    font-style: bold;
+    font-weight: 700;
+}
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-family: 'Qanelas', sans-serif;
-    font-weight: lighter;
-    background-color: var(--just-wite);
+    background-color: var(--off-white);
     height: 100vh;
+}
+h1,h2, h3, h4, h5, h6, p, a {
+    font-family: Qanelas;
 }
 nav {
     background-color: var(--blue-scope);
@@ -84,6 +98,9 @@ nav {
     display: block;
 }
 .nav__menu a {
+    display: block;
+    padding: 1rem;
+    position: relative;
     text-decoration: none;
     color: var(--just-wite);
     font-size: 1.8rem;
@@ -94,6 +111,7 @@ nav {
 }
 .nav__checkbox:checked ~ ul.nav__menu li {
     display: block;
+    margin-bottom: 30px;
 }
 .nav__checkbox:checked ~ label.nav__toggle .close {
     display: block;
@@ -108,14 +126,14 @@ nav {
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: 650px;
+    min-height: 100vh;
     text-align: center;
-    background-image: url(../recursos/images/fondo-scope.png);
+    background-image: url(https://res.cloudinary.com/souldoutt/image/upload/v1653696933/scope/images/fondo-scope_wjwmju.png);
 }
 
 .portada-texto .portada-texto__title {
     font-size: 4rem;
-    font-family: Qanelas;
+    font-weight: 700;
     color: var(--just-wite);
     margin:40px 15px 40px 15px;
 }
@@ -124,10 +142,12 @@ nav {
     font-size: 2rem;
     margin-bottom: 10px;
     color: var(--just-wite);
+    font-weight: 200;
 }
 .portada-texto .portada-texto__p2 {
     font-size: 1.4rem;
     color: var(--just-wite);
+    font-weight: 100;
 }
 
 .portada .portada-img__1 {
