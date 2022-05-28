@@ -5,6 +5,7 @@
 .nav__menu {
     flex-direction: row;
     margin: 0px 40px 0px 40px;
+    align-items: center;
 }
 .nav__menu li {
     display: block;
@@ -20,9 +21,33 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     min-width: 320px;
-    height: 600px;
+    height: 100vh;
     text-align: center;
+    padding-left: 80px;
     background-image: url(https://res.cloudinary.com/souldoutt/image/upload/v1653696933/scope/images/fondo-scope-desktop_sk7ar2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.portada-texto .portada-texto__title{
+    font-size: 8rem;
+}
+.portda-img .portada-img__1{
+    width: 600px;
+}
+.nav__menu a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 90%;
+    height: 5px;
+    width: 100%;
+    background: var(--off-white);
+    opacity: 0;
+    transition: all .5s;
+}
+.nav__menu a:hover::before{
+    opacity: 1;
 }
