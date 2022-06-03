@@ -198,33 +198,39 @@ ul .menu__logo{
 
 /* section */
 .section-team {
+    height: 100vh;
+}
+.section-team-content {
+    position: absolute;
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .section-team__title {
-    padding: 0px 20px;
+    padding: 0px 10px;
     color: var(--blue-scope);
 }
 .section-team_button {
     color: var(--just-wite);
     background-color: var(--blue-scope);
     height: 50px;
-    width: 200px;
+    width: 210px;
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
     text-decoration: none;
     border-radius: 8px;
-    padding: 6px 0px;
+    padding: 3px 0px;
 }
 
 /* slider */
 
 .slider {
     width: 100%;
-    height: 700px;
+    height: auto;
     overflow: hidden;
 }
 .slider ul {
@@ -238,6 +244,7 @@ ul .menu__logo{
     list-style: none;
 }
 .slider img {
+    margin-top: 100px;
     width: 100%;
     height: 100%;
 }
